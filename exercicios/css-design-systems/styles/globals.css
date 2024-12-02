@@ -1,0 +1,64 @@
+:root {
+    --black: #181818;
+    --neutral: #fafafa;
+    --neutral-gray: #a3a3a3;
+    --primary: #0070D2;
+    --primary-10: #005FB2;
+    --red: #C23934;
+    --red-10: #A61A14;
+    --green: #4BCA81;
+    --green-10: #04844B;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: #fafafa;
+}
+
+.wrapper__content {
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
+    gap: 24px;
+}
+
+/* img {
+    border-radius: 12px;
+} */
+
+.border-radius-xs {
+    border-radius: 4px;
+}
+.border-radius-s {
+    border-radius: 8px;
+}
+.border-radius-m {
+    border-radius: 12px;
+}
+
+button {
+padding: 4px;
+ background: gainsboro;
+ border: 0; 
+}
+
+.bg--info {
+    background-color: blue;
+}
+.bg--danger {
+    background-color: red;
+}
+.bg--success {
+    background-color: green;
+}

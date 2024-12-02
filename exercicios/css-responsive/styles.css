@@ -1,0 +1,31 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color:rgb(49, 48, 48);
+    margin: 33px;
+} 
+
+h1 {
+    color: yellow;
+}
+
+img {
+    width: 100px;
+}
+
+.mention {
+    color: yellow;
+    font-style: italic;
+    text-align: center;
+}
+
+.card {
+    background: grey;
+    font: white;
+    display: flex
+}
+
+
+ 

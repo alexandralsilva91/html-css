@@ -4,26 +4,61 @@
     box-sizing: border-box;
 }
  
-
-html {
-    background: red;
+html {     
+    background-image: linear-gradient(to right, rgb(179 25 73), #3622ca);
     body {
         margin: 0;
         padding: 0;
         font-family: 'IBM Plex Sans', sans-serif;
         color: white
-    }
+     }
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.thumbnail {
+    position: absolute;
+    bottom: -78px;
+    left: 31px;
 }
 
 .card {
     width: 250px;
     height: 400px;
     background: white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 14px 9px #170a8691, 19px 20px 20px 9px #00000000;
+    position: relative;
+    animation-name: rt ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+}
+
+.card:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rt {
+    from {
+        transform:rotate(15deg)
+    }
+    to {
+       transform:rotate(-15deg) 
+    }
 }
 
 .card__content {
     height: 80%;
-    background: orange;
+    background: linear-gradient(to right, red, orange);
+    border-radius: 10px 10px 0 0;
+    position: relative;
 }
 
 .card__header {
@@ -35,24 +70,66 @@ html {
 .card__header img {
     width: 55px;
 }
+
 h4 {
     text-transform: uppercase;
+    padding: 0px 8px;
 }
+
+.card p {
+    padding: 0px 8px;
+}
+
 p {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .card__backdrop {
     overflow: hidden;
 }
+
 .card__backdrop__text {
     text-transform: uppercase;
     font-size: 150px;
     letter-spacing: 22px;
-    color: rgb(255 255 255 / 50%);
-    top: -40px;
+    color: rgba(255, 255, 255, 0.264);
+    top: -35px;
     position: relative;
     left: -10px;
     font-weight: 900;
+    margin: -6px;
 }
 
+.card__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.card__actions button {
+    color: rgb(51, 0, 255);
+    border-color: rgb(51, 0, 255);
+    border-radius: 20px;
+    width: 38%;
+    padding: 8px;
+    background-color: white;
+    letter-spacing: 2px;
+}
+
+.card__actions p {
+    color: lightgray;
+    letter-spacing: 4px;
+    margin: 6px 0 6px 0;
+}

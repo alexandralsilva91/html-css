@@ -9,10 +9,38 @@ body {
 
 h1 {
     color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: none;
+    border: none;
+    display: flex;
+    color: white;
+    padding: 12px 0;
+}
+
+.buttons_extra_yellow {
+    color: yellow;
+}
+
+.buttons_categories {
+    display: flex;
+    gap: 12px;
 }
 
 img {
-    width: 100px;
+    width: 150px;
+    height: 70px;
+    border-radius: 6px;
+    object-fit: cover ;
 }
 
 .mention {
@@ -21,11 +49,67 @@ img {
     text-align: center;
 }
 
-.card {
-    background: grey;
-    font: white;
-    display: flex
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
+.card {
+    background: #404040;
+    font: white;
+    display: flex;
+    border-color: #b2abab;
+    border-style: ridge;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
 
- 
+h4 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+span {
+    color: #5b85ff;
+    font-size: smaller;
+}
+
+div {
+    font-size: 12px;
+}
+
+@media (max-width: 725px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        flex-direction: row;
+        gap: 10px;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .buttons_extra {
+        display: none;
+    }
+    .buttons_extra_mobile {
+        display: block;
+    }
+}
+@media (min-width: 726px) {
+    .buttons_extra_mobile {
+        display: none;
+    }
+}

@@ -5,6 +5,15 @@ html {
     font-family: "Inter", sans-serif;
 }
 
+h2 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.header-strong {
+    font-weight: 400;
+}
+
 .nav_items {
     display: flex;
 }
@@ -133,4 +142,15 @@ p.section_collections_p {
 
 .section_collections_content {
     width: 216px;
+}
+
+.real-life-spaces {
+    &__thumbnails {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+    &__thumbnail {
+
+    }
 }

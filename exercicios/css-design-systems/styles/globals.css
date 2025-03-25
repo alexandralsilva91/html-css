@@ -47,18 +47,13 @@ body {
     border-radius: 12px;
 }
 
-button {
-padding: 4px;
- background: gainsboro;
- border: 0; 
+.button {
+    padding: 8px 16px;
+    border-radius: 4px;
 }
 
-.bg--info {
-    background-color: blue;
-}
-.bg--danger {
-    background-color: red;
-}
-.bg--success {
-    background-color: green;
+.button--primary {
+    color: var(--neutral);
+    background-color: var(--primary);
+    border-color: var(--primary);
 }

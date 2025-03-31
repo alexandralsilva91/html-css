@@ -1,0 +1,29 @@
+
+.splash-screen {
+    position: relative;
+    display: flex;
+}
+
+.splash-screen-info {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #FCED70;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.splash-img {
+    width: 100%;
+}
+
+.splash-screen-title {
+    color: white;
+    font-weight: 500;
+}

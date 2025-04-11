@@ -1,0 +1,13 @@
+.images-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 0 10rem;
+}
+
+.images-container img {
+    display: flex;
+    width: 100%;
+}

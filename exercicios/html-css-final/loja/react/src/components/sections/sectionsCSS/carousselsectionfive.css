@@ -1,0 +1,9 @@
+.caroussel-container {
+    display: flex;
+    gap: 1.5rem;
+    overflow: scroll;
+}
+
+.caroussel-container img {
+    width: 290px;
+}

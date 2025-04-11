@@ -1,0 +1,28 @@
+.splash-infos-container {
+    background-color: #ffebcdeb;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 3.5rem 0;
+}
+
+.splash-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.icon {
+    width: 76px;
+    height: 76px;
+}
+
+.text {}
+
+.text p {
+    font-size: 11px;
+    width: 180px;
+}

@@ -1,41 +1,27 @@
+import Title from "./Title";
 import "./section.css";
 
-function Section() {
-    return <div className="section">
-        <h1 className="section-title">Clever designs, delivered free</h1>
-        <div className="section-grid-container">   
-            <div className="img-container">
-                <img src="../../public/D-VN-Seating.webp" alt="Category Seating" /> 
-                <span>Seating</span>
+function Section({ title, fullScreen = false, noBottomMargin = false, children }) {
+    let containerClasses = "full-container section-children-container";
+
+    if (fullScreen) {
+        containerClasses += " fullscreen";
+    }
+
+    if (noBottomMargin) {
+        containerClasses += " no-bottom-margin";
+    }
+
+    return (
+        <div className="full-container flex flex-col">
+            <Title>
+                {title}
+            </Title>
+            <div className={containerClasses}>
+                {children}
             </div>
-            <div className="img-container">
-                <img src="../../public/category-outdoor.webp" alt="Category Outdoor" />
-                <span>Outdoor</span>
-            </div>
-            <div className="img-container">
-                <img src="../../public/category-storage.webp" alt="Category Storage" />
-                <span>Storage</span>
-            </div>
-            <div className="img-container">
-                <img src="../../public/category-bedroom.webp" alt="Category Bedroom" />
-                <span></span>
-            </div>
-            <div className="img-container">
-                <img src="../../public/category-tables.webp" alt="Category Tables" />
-                <span>Tables</span>
-            </div>
-            <div className="img-container">
-                <img src="../../public/category-rugs.webp" alt="Category Rugs" />
-                <span>Rugs</span>
-            </div>
-                
-                
-                
-                
-                
-                
         </div>
-    </div>
+    )
 }
 
 export default Section;

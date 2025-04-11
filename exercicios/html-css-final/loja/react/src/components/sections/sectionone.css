@@ -1,0 +1,41 @@
+.section-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.img-container {
+    display: flex;
+    position: relative;
+}
+
+.img-container img {
+    width: 280px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-container span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 8px 8px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/*
+.section-grid-container img {
+    width: 280px;
+    height: 150px;
+    object-fit: cover;  isto resolveu o problema das imagens terem diferentes 
+    dimensões e proporções e eu quis que elas ficassem todas com a msm proporção e dimensões 
+    sem que ocorresse um efeito de stretching e sem ter que as meter a cada uma dentro de uma div 
+    object-position: center;  no seguimento do comentário anterior, isto fez com que as imagens 
+    que estavam fora do pretendo, fossem cortadas em cima e em baixo (para a imagem dos móveis 
+    ficar centrada
+} */

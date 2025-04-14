@@ -1,0 +1,93 @@
+.footer-full-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.social-media {
+    background-color: #686666;
+    height: 8rem;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.form-subscribe {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-field {
+    width: 200px;
+    background-color: #686666;
+    padding: 10px ;
+    border-color: white;
+    border-radius: 4px 0 0 4px;
+}
+
+.subscribe-btn {
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+}
+        
+
+
+.info-links {
+    background-color: rgb(61, 57, 57);
+    height: 26rem;
+    padding: 2rem;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 14rem;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.last-row {
+    color: white;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 10px;
+}
+
+.copyright-legal {
+    display: flex;
+    flex-direction: column;
+}
+
+.legal a {
+    color: white;
+    text-decoration: none;
+}
+
+.address {
+    color: white;
+}
+
+address.adress {
+    font-style: normal;
+}
+
+.contacts {
+    gap: 5px;
+}

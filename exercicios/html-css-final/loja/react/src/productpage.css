@@ -1,0 +1,20 @@
+.product-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6rem;
+}
+
+.product-page-title {}
+
+.product-page-intro {
+    width: 450px;
+}
+
+.products-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 394px 394px 394px;
+    gap: 2rem;
+    grid-row: auto;
+    justify-content: center;
+}

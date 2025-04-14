@@ -2,7 +2,7 @@ import "./footer.css";
 
 const shoppingLinks = ["Schedule Consultation", "Showrooms", "Trade Program", "Outlet"];
 const aboutLinks = ['Our Story', 'Reviews', 'Careers', 'Financing', 'Patents', 'Our Blog'];
-const resourcesLinks = ['Look Up Order Status', 'Assembly Instructions', 'Returns', 
+const resourcesLinks = ['Look Up Order Status', 'Assembly Instructions', 'Returns',
     'Shipping & Delivery', 'FAQ', 'Refer a Friend'];
 
 function Footer() {
@@ -16,7 +16,7 @@ function Footer() {
                         name="email"
                         id="email"
                         placeholder="Sign up for enthralling couch reads"
-                        maxlength="40"
+                        maxLength="40"
                         required />
                     <input className="subscribe-btn" type="submit" value="SUBSCRIBE" />
                 </form>
@@ -28,7 +28,7 @@ function Footer() {
                         {
                             shoppingLinks.map((shoppingLink) => {
                                 return (
-                                    <a href="">{shoppingLink}</a>
+                                    <a key={shoppingLink} href="">{shoppingLink}</a>
                                 )
                             })
                         }
@@ -36,9 +36,9 @@ function Footer() {
                     <div className="column">
                         <h4>About</h4>
                         {
-                            aboutLinks.map((shoppingLink) => {
+                            aboutLinks.map((aboutLink) => {
                                 return (
-                                    <a href="">{shoppingLink}</a>
+                                    <a key={aboutLink} href="">{aboutLink}</a>
                                 )
                             })
                         }
@@ -46,9 +46,9 @@ function Footer() {
                     <div className="column">
                         <h4>Resources</h4>
                         {
-                            resourcesLinks.map((shoppingLink) => {
+                            resourcesLinks.map((resourcesLink) => {
                                 return (
-                                    <a href="">{shoppingLink}</a>
+                                    <a key={resourcesLink} href="">{resourcesLink}</a>
                                 )
                             })
                         }

@@ -1,4 +1,3 @@
-import Header from "./components/header/Header"
 import SplashScreen from "./components/body/SplashScreen"
 import Section from "./components/sections/Section"
 import SectionTwo from "./components/sections/SectionTwo"
@@ -7,12 +6,10 @@ import SectionFourth from "./components/sections/SectionFourth"
 import CarousselSectionFive from "./components/sections/CarousselSectionFive"
 import Button from "./components/body/Button"
 import SectionOne from "./components/sections/SectionOne"
-import Footer from "./components/Footer"
 
-function App() {
+function HomePage() {
   return (
     <>
-      <Header />
       <SplashScreen />
       <Section title="Clever designs, delivered free">
         <SectionOne />
@@ -38,9 +35,8 @@ function App() {
           <Button>Shop seating</Button>
         </div>
       </Section>
-      <Footer />
     </>
   );
 }
 
-export default App;
+export default HomePage;

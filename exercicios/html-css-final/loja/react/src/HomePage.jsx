@@ -32,7 +32,7 @@ function HomePage() {
           loop
         />
         <div className="full-container flex center">
-          <Button>Shop seating</Button>
+          <Button className="btn-with-margin">Shop seating</Button>
         </div>
       </Section>
     </>

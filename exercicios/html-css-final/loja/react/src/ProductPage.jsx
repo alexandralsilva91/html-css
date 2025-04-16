@@ -56,8 +56,11 @@ function ProductPage() {
                 productName="Nomad Sofa"
                 productPrice="$1595 or as low as $100/mo"
                 />
+                <div className="btn-box">
+                    <Button>See more</Button>
+                </div>  
            </div>
-           <Button>See more</Button>
+           
         </div>
     )
 }

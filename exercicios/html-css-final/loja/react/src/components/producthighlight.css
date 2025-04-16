@@ -1,0 +1,52 @@
+
+.product-highlight.left {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.product-highlight.right {
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+.highlight-video-box {
+    width: 598px;
+    overflow: hidden;
+    display: block;
+    height: 652px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+
+.highlight-video {
+    position: absolute;
+    right: -170px;
+}
+
+.product-highlight-text {
+    width: 598px;
+    height: 652px;
+}
+
+.product-highlight-text-title {
+    font-weight: 400;
+}
+    
+.product-highlight-text-description {
+    font-size: 20px;
+}
+
+.product-highlight-extra-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: small;
+}
+
+.product-highlight-extra-details p {
+    margin: 0
+}

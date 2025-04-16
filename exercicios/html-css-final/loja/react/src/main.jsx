@@ -6,6 +6,7 @@ import ProductPage from './ProductPage'
 import { BrowserRouter, Routes, Route } from "react-router";
 import Header from "./components/header/Header"
 import Footer from "./components/Footer"
+import SelectedProductPage from './components/SelectedProductPage'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,7 +14,8 @@ createRoot(document.getElementById('root')).render(
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/product" element={<ProductPage />} />
+        <Route path="/all-products" element={<ProductPage />} />
+        <Route path="/product" element={<SelectedProductPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

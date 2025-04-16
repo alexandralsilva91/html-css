@@ -1,7 +1,7 @@
 import "./body.css";
 
-function Button({children}) {
-    return <button className="btn">
+function Button({ children, className = "" }) {
+    return <button className={`btn ${className}`}>
         {children}
     </button>
 }

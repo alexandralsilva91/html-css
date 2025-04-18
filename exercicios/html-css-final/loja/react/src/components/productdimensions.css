@@ -1,0 +1,27 @@
+.product-dimensions {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.product-dimensions-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.product-dimensions-info {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.product-dimensions-info-text {
+
+}
+
+.dimensions-chart {
+
+}
+
+.product-dimensions-info-image {
+    width: 50%;
+}
+        

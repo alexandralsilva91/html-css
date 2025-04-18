@@ -8,3 +8,16 @@
 .title-bold {
     font-weight: 500;
 }
+
+.title-left{
+    font-weight: 400;
+    justify-content: left;
+    padding: 20px 0 20px 0;
+}
+
+.title-left-smaller {
+    font-size: 28px;
+    justify-content: left;
+}
+
+

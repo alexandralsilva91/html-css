@@ -1,9 +1,10 @@
 import "./productkeyfeatures.css"
+import Title from "./sections/Title";
 
 function ProductKeyFeatures() {
     return (
         <div className="product-key-features">
-            <h2 className="product-key-features-title">Key features</h2>
+            <Title className="title-left-smaller">{"Key features"}</Title>
             <div className="features">
                 <div className="feature">
                         <img src="../../public/icons/icon-1.webp" alt="icon" width="150px" />

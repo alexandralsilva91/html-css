@@ -1,0 +1,24 @@
+.product-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-about-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.product-about-description {
+    font-size: 20px;
+}
+
+.product-about-features {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.product-about-feature {
+    font-size: small;
+}
+

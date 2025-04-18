@@ -1,4 +1,5 @@
 import "./producthighlight.css"
+import Title from "./sections/Title";
 
 function ProductHighlight({
     videoSource,
@@ -7,6 +8,7 @@ function ProductHighlight({
     description,
     details
 }) {
+
     return (
         <div className={`product-highlight ${videoSide}`}>
             <div className="highlight-video-box">
@@ -20,15 +22,13 @@ function ProductHighlight({
                 />
             </div>
             <div className="product-highlight-text">
-                <h1 className="product-highlight-text-title">
-                    {title}
-                </h1>
+                <Title className="title-left">{title}</Title>
                 <p className="product-highlight-text-description">
                     {description}
                 </p>
                 <div className="product-highlight-extra-details">
-                    {details?.map((detail) => (
-                        <div className="detail">
+                    {details?.map((detail, index) => (
+                        <div key={`detail-${index}`} className="detail">
                             <strong>{detail.title}</strong>
                             <p>{detail.description}</p>
                         </div>

@@ -1,7 +1,8 @@
 import "./productdetails.css";
 import Title from "./sections/Title";
+import Button from "./body/Button";
 
-function ProductDetails( colectionTitle, productName, imgSource, productPrice, fabricColor, colorIcons, upgradeOptions ) {
+function ProductDetails({ colectionTitle, productName, imgSource, productPrice, fabricColor, colorIcons, upgradeOptions }) {
     return (
         <div className="product-details">
             <div className="product-details-img">
@@ -9,28 +10,35 @@ function ProductDetails( colectionTitle, productName, imgSource, productPrice, f
                 <img src={imgSource} alt="product" />
             </div>
             <div className="product-details-text">
-                <Title className="title-left-smaller">{productName}</Title>
+                <p className="product-name">{productName}</p>
                 <span>{`$${productPrice} + Free Shipping`}</span>
-                <div className="fabric-color">
+                <div>
                     <div><strong>Fabric Color</strong>-{fabricColor}</div>
                     <div className="colors">
-                        {colorIcons.map((colorIcon, index) => (
-                            <img className={`color-icon-${index}`} scr={} alt="color-icon">{colorIcon.icon}</img>
-                        ))}
+                        {colorIcons.map((colorIcon, index) => {
+                            let className = "color-icon"
+                            if( index === 0) {
+                                className = `${className} selected`
+                            } 
+                            return(
+                                <div key={`color-icon-${index}`} className={className} style={{backgroundColor: colorIcon}}/>
+                            )
+                        })}
+
                     </div>
                 </div>
                 <div className="upgrades">
                     <strong>Upgrades</strong>
                     <div className="upgrade-options">
                         {upgradeOptions.map((upgradeOption, index) => (
-                            <div className={`upgrade-option-${index}`}>
-                                <input type="checkbox" id={`upgrade-option-input-${index}`} name="scales" checked />
+                            <div key={`upgrade-option-${index}`} className="upgrade-option">
+                                <input type="checkbox" id={`upgrade-option-input-${index}`} name="scales" />
                                 <label for="upgrade-option-label">{`${upgradeOption.name} + $${upgradeOption.price}`}</label>
                             </div>
                         ))}
                     </div>
-                </div>
-                <Button>Add to cart</Button>
+                </div>   
+                <Button className="product-details-btn">Add to cart</Button>
             </div>
         </div>
     )

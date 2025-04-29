@@ -28,7 +28,7 @@ function Footer() {
                         {
                             shoppingLinks.map((shoppingLink) => {
                                 return (
-                                    <a key={shoppingLink} href="">{shoppingLink}</a>
+                                    <a key={shoppingLink} href="#">{shoppingLink}</a>
                                 )
                             })
                         }
@@ -38,7 +38,7 @@ function Footer() {
                         {
                             aboutLinks.map((aboutLink) => {
                                 return (
-                                    <a key={aboutLink} href="">{aboutLink}</a>
+                                    <a key={aboutLink} href="#">{aboutLink}</a>
                                 )
                             })
                         }
@@ -48,13 +48,13 @@ function Footer() {
                         {
                             resourcesLinks.map((resourcesLink) => {
                                 return (
-                                    <a key={resourcesLink} href="">{resourcesLink}</a>
+                                    <a key={resourcesLink} href="#">{resourcesLink}</a>
                                 )
                             })
                         }
                     </div>
-                    <div className="column contacts">
-                        <h4>Contact customer experience</h4>
+                    <div className="column-contacts">
+                        <h4>Contact Customer Experience</h4>
                         <p>Email: support@template.com</p>
                         <p>Text: 224-628-7769</p>
                         <p>Hours:</p>

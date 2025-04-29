@@ -1,4 +1,4 @@
-import "./sectionsCSS/sectionfourth.css"
+import "./sectionfourth.css"
 
 function SectionFourth() {
     return (

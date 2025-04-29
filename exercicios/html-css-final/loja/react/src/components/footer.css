@@ -8,7 +8,9 @@
 .social-media {
     background-color: #686666;
     height: 8rem;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .form-subscribe {
@@ -17,11 +19,15 @@
 }
 
 .input-field {
-    width: 200px;
+    width: 230px;
     background-color: #686666;
-    padding: 10px ;
-    border-color: white;
+    padding: 10px;
+    border: 1px solid white;
     border-radius: 4px 0 0 4px;
+}
+
+.input-field::placeholder {
+    color: white;
 }
 
 .subscribe-btn {
@@ -30,21 +36,22 @@
     padding: 10px 20px;
     border-radius: 0 4px 4px 0;
 }
-        
-
 
 .info-links {
-    background-color: rgb(61, 57, 57);
-    height: 26rem;
+    background-color: #131313;
+    height: auto;
     padding: 2rem;
+    flex-direction: column;
+    gap: 0;
+    display: flex;
 }
 
 .columns {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5%;
+    padding: 0 4rem 2rem 0;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 14rem;
     text-transform: capitalize;
     font-size: 14px;
 }
@@ -61,13 +68,18 @@
     text-transform: capitalize;
 }
 
+h4 {
+    margin-bottom: 0;
+}
+
 .last-row {
     color: white;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     font-size: 10px;
+    margin-top: 1rem;
 }
 
 .copyright-legal {
@@ -88,6 +100,53 @@ address.adress {
     font-style: normal;
 }
 
-.contacts {
-    gap: 5px;
+.column-contacts {
+    text-transform: none;
+}
+
+/* MEDIA QUERIES MOBILE */
+
+
+@media (max-width: 768px) {
+    .social-media {
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .form-subscribe {
+        width: 100%;
+        flex-direction: column;
+        border-radius: 4px;
+        gap: 0.5rem;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .columns {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-gap: 2%;
+        padding: 0;
+    }
+
+    .last-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .info-links {
+        gap: 4rem;
+    }
+
+    .input-field {
+        width: auto;
+        border-radius: 4px;
+    }
 }

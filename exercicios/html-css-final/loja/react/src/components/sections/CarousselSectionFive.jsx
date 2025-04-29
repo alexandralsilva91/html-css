@@ -1,4 +1,4 @@
-import "./sectionsCSS/carousselsectionfive.css";
+import "./carousselsectionfive.css";
 
 function CarousselSectionFive() {
     return (

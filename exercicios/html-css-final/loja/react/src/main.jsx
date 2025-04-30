@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/all-products" element={<ProductPage />} />
+        <Route path="/products" element={<ProductPage />} />
         <Route path="/product" element={<SelectedProductPage />} />
       </Routes>
       <Footer />

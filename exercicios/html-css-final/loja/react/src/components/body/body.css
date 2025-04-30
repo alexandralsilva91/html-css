@@ -30,6 +30,11 @@
     width: fit-content;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background-color: #ffeb3b;
+}
+
 .splash-screen-title {
     color: white;
     font-weight: 500;

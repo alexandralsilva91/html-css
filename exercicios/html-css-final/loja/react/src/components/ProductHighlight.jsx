@@ -8,7 +8,6 @@ function ProductHighlight({
     description,
     details
 }) {
-
     return (
         <div className={`product-highlight ${videoSide}`}>
             <div className="highlight-video-box">
@@ -33,7 +32,6 @@ function ProductHighlight({
                             <p>{detail.description}</p>
                         </div>
                     ))}
-
                 </div>
             </div>
         </div>

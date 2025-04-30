@@ -4,7 +4,7 @@ import NavbarBtn from "./NavbarBtn";
 function Header({ mobile }) {
     return (
         <div className="header-container">
-            <a className="logo" href="#home"></a>
+            <a className="logo" href="/"></a>
             <div className="navbar-btns">
                 <NavbarBtn>Seating</NavbarBtn>
                 <NavbarBtn>Living Room</NavbarBtn>

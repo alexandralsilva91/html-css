@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 import Button from "./Button";
 
 function SplashScreen() {
@@ -6,7 +8,9 @@ function SplashScreen() {
             <img className="splash-screen-img" src="public/splash-screen.webp" alt="sala do splash screen" />
             <div className="splash-screen-info">
                 <h2 className="splash-screen-title">Clever designs, delivered free</h2>
-                <Button>shop bedroom</Button>
+                <NavLink to="/products">
+                    <Button >shop bedroom</Button>
+                </NavLink>
             </div>
         </div>
     )

@@ -22,3 +22,10 @@
     font-size: small;
 }
 
+/* MEDIA QUERIES MOBILE */
+@media (max-width: 768px) {
+    .product-about-features {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

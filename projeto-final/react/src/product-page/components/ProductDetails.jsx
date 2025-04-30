@@ -1,5 +1,4 @@
 import "./productdetails.css";
-import Title from "../../common/Title";
 import Button from "../../common/Button";
 
 function ProductDetails({ colectionTitle, productName, imgSource, productPrice, fabricColor, colorIcons, upgradeOptions }) {

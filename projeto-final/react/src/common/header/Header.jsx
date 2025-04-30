@@ -2,7 +2,7 @@ import NavbarBtn from "./NavbarBtn";
 import "./header.css";
 
 
-function Header({ mobile }) {
+function Header() {
     return (
         <div className="header-container">
             <a className="logo" href="/"></a>

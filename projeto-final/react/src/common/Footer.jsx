@@ -7,7 +7,7 @@ const resourcesLinks = ['Look Up Order Status', 'Assembly Instructions', 'Return
 
 function Footer() {
     return (
-        <div className="footer-full-container">
+        <div className="footer">
             <div className="social-media">
                 <form action="" method="post" className="form-subscribe">
                     <input

@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .products-container {
@@ -12,6 +12,3 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-/* MEDIA QUERIES MOBILE */
-

@@ -1,0 +1,171 @@
+.footer-full-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.social-media {
+    background-color: #686666;
+    height: 8rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media-icon:hover {
+    cursor: pointer;
+}
+
+.form-subscribe {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-field {
+    width: 230px;
+    background-color: #686666;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-field::placeholder {
+    color: white;
+}
+
+.subscribe-btn {
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.subscribe-btn:hover {
+    cursor: pointer;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.info-links {
+    background-color: #131313;
+    height: auto;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 0;
+    display: flex;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5%;
+    padding: 0 4rem 2rem 0;
+    flex-direction: row;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+.last-row {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 10px;
+    margin-top: 1rem;
+}
+
+.copyright-legal {
+    display: flex;
+    flex-direction: column;
+}
+
+.legal a {
+    color: white;
+    text-decoration: none;
+}
+
+.address {
+    color: white;
+}
+
+address.adress {
+    font-style: normal;
+}
+
+.column-contacts {
+    text-transform: none;
+}
+
+
+/* MEDIA QUERIES MOBILE */
+
+
+@media (max-width: 768px) {
+    .social-media {
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-subscribe {
+        width: 100%;
+        flex-direction: column;
+        border-radius: 4px;
+        gap: 0.5rem;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .social-media-icons {
+        display: none;
+    }
+
+    .columns {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-gap: 2%;
+        padding: 0;
+    }
+
+    .last-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .info-links {
+        gap: 4rem;
+    }
+
+    .input-field {
+        width: auto;
+        border-radius: 4px;
+    }
+}

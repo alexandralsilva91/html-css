@@ -1,0 +1,36 @@
+.splash-screen {
+    position: relative;
+    display: flex;
+    height: 604px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-screen-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.splash-screen-info {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+.splash-screen-title {
+    color: white;
+    font-weight: 500;
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 768px) {
+    .splash-screen-info {
+        left: 34px;
+        bottom: 40px;
+        top: auto;
+    }
+}

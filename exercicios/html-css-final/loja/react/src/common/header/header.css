@@ -1,0 +1,38 @@
+.header-container {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+}
+
+.logo {
+    background-color: rgb(132, 134, 136);
+    width: 60px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.navbar-btns {
+    display: flex;
+}
+
+.navbar-btn-mobile {
+    display: none;
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 768px) {
+    .navbar-btns {
+        display: none;
+    }
+
+    .navbar-btn-mobile {
+        display: flex;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}

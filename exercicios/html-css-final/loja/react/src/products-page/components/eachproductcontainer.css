@@ -1,0 +1,24 @@
+.each-product-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.each-product-container:hover {
+    cursor: pointer;
+}
+
+.product-img {
+    max-width: 393px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 14px;
+}
+
+.product-price {
+    color: grey;
+    font-weight: 300;
+    font-size: 12px;
+}

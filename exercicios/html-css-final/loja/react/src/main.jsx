@@ -1,12 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import HomePage from './HomePage'
-import ProductPage from './ProductPage'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import HomePage from './homepage/HomePage';
+import ProductsPage from './products-page/ProductsPage';
 import { BrowserRouter, Routes, Route } from "react-router";
-import Header from "./components/header/Header"
-import Footer from "./components/Footer"
-import SelectedProductPage from './components/SelectedProductPage'
+import Header from "./common/header/Header";
+import Footer from "./common/Footer";
+import ProductPage from './product-page/ProductPage';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,8 +14,8 @@ createRoot(document.getElementById('root')).render(
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductPage />} />
-        <Route path="/product" element={<SelectedProductPage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/product" element={<ProductPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

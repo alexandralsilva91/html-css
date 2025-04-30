@@ -1,0 +1,19 @@
+.images-row {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    gap: 14px;
+    margin: 0 auto;
+}
+
+.images-container {
+    display: flex;
+    gap: 14px;
+    min-width: max-content;
+    margin: auto;
+}
+
+.images-container img {
+    width: auto;
+    flex-shrink: 0;
+}

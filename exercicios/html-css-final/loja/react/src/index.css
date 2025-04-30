@@ -18,15 +18,6 @@ body {
   width: 100%;
 }
 
-/* 
-css p por os gaps entre as varias secçoes (header, secçoes do body, footer):
-#root {
-  width: 100%;
-  display: flex;
-  gap: 4rem;
-  flex-direction: column;
-} */
-
 .full-container {
   width: 100%;
 }

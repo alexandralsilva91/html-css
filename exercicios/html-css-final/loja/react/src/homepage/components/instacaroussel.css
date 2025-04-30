@@ -1,0 +1,9 @@
+.insta-caroussel {
+    display: flex;
+    gap: 1.5rem;
+    overflow: scroll;
+}
+
+.insta-caroussel img {
+    width: 290px;
+}

@@ -1,0 +1,20 @@
+.product-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+    max-width: 1680px;
+}
+
+@media (max-width: 1700px) {
+    .product-page {
+        margin: 4rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .product-page {
+        margin: 2rem;
+    }
+}

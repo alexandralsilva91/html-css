@@ -17,7 +17,7 @@ function SectionOne() {
             </div>
             <div className="img-container">
                 <img src="../../public/category-bedroom.webp" alt="Category Bedroom" />
-                <span></span>
+                <span>Bedroom</span>
             </div>
             <div className="img-container">
                 <img src="../../public/category-tables.webp" alt="Category Tables" />

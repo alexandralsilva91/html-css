@@ -11,3 +11,13 @@
 .section-children-container.no-bottom-margin {
     margin-bottom: 0;
 }
+
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 768px) {
+    .section-children-container {
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+}

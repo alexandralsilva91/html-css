@@ -9,28 +9,6 @@
     display: flex;
 }
 
-/* 
-.header-strong {
-    font-weight: 400;
-}
-
-.nav_items {
-    display: flex;
-}
-
-
-
-button.nav_item {
-    padding: 0px 15px;
-}
-
-.nav_full_header {
-    display: flex;
-    justify-content: space-between;
-    padding: 18px;
-}
-*/
-
 .logo {
     background-color: rgb(132, 134, 136);
     width: 60px;
@@ -43,6 +21,9 @@ button.nav_item {
     display: flex;
 }
 
+.navbar-btn-mobile {
+    display: none;
+}
 
 /* DropDown button (navbar) */
 .navbar-btn {
@@ -72,4 +53,16 @@ button.nav_item {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media (max-width: 768px) {
+    .navbar-btns {
+        display: none;
+    }
+
+    .navbar-btn-mobile {
+        display: flex;
+    }
 }

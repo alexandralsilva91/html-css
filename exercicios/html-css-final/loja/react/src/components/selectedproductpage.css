@@ -1,18 +1,13 @@
-/* 
-.selected-product-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-
-} */
-
 .selected-product-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 4rem 8rem;
+}
+
+@media (max-width: 768px) {
+    .selected-product-page {
+        margin: 2rem;
+    }
 }

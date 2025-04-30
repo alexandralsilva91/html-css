@@ -44,12 +44,7 @@
 
 @media (max-width: 768px) {
     .section-grid-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
         padding: 20px;
-    }
-
-    .img-container img {
-        max-width: 165px;
-        max-height: 102px;
     }
 }
